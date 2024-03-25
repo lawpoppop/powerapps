@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr9e2_products",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr9e2_product",
+    "Name": "Products_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr9e2_name": "name",
+      "cr9e2_price": "Price",
+      "cr9e2_product_AsyncOperations": "System Jobs",
+      "cr9e2_product_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr9e2_product_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr9e2_product_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr9e2_product_ProcessSession": "Process Sessions",
+      "cr9e2_product_SyncErrors": "Sync Errors",
+      "cr9e2_productid": "Product",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Products_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Products_1 (Views)",
+    "Name": "_cr9e2_product_views",
+    "RelatedEntityName": "Products_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "38396986-c70c-4273-94a7-e9bffb8dd17b": "Product Advanced Find View",
+      "6d921d1e-d4b4-40e1-b359-c421f615138c": "Inactive Products",
+      "96746e57-871b-483c-b082-3edff75fd89d": "Product Associated View",
+      "cc9d64ec-c037-45f5-b13f-179c27648b55": "Product Lookup View",
+      "e3273aee-d86d-4461-b223-98c428fc397f": "Active Products"
+    }
+  },
+  {
+    "DisplayName": "Status (Products_1)",
+    "Name": "cr9e2_product_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Products_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Products_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Products_1)",
+    "Name": "cr9e2_product_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Products_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Products_1",
+    "Type": "OptionSetInfo"
+  }
+]

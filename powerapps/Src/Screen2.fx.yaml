@@ -1,0 +1,180 @@
+"Screen2 As screen.'headerGalleryLayout_ver1.0'":
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =761
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Header1 As Header:
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                OnSelectLogo: =false
+                Title: ="Header"
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        MainContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =Parent.Fill
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =1000
+            ZIndex: =4
+
+            "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+                AccessibleLabel: ="Items gallery"
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(245, 245, 245, 1)
+                Default: =LookUp(
+                DelayItemLoading: =true
+                Items: =localProducts
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: =Set(var,Gallery1.Selected.ID)
+                TabIndex: =0
+                TemplatePadding: =0
+                TemplateSize: =90
+                Transition: =Transition.Pop
+                ZIndex: =1
+
+                Title4 As label:
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =12
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Title
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+                    ZIndex: =1
+
+                Subtitle2 As label:
+                    Color: =RGBA(96, 94, 92, 1)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =12
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Country
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Title4.Width
+                    X: =Title4.X
+                    Y: =Title4.Y + Title4.Height
+                    ZIndex: =2
+
+                NextArrow3 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(166, 166, 166, 1)
+                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                    DisabledColor: =RGBA(225, 223, 221, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =50
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =RGBA(16, 110, 190, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =16
+                    PaddingLeft: =16
+                    PaddingRight: =16
+                    PaddingTop: =16
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =RGBA(16, 110, 190, 1)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="View item details"
+                    Width: =50
+                    X: =Parent.TemplateWidth - Self.Width - 12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =3
+
+                Separator3 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =4
+
+                Rectangle3 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 120, 212, 1)
+                    Height: =Parent.TemplateHeight - Separator3.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =5
+
+        ButtonCanvas1 As Button:
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =32
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            Text: ="Refresh"
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =5
+

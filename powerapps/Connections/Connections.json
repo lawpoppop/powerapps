@@ -1,0 +1,31 @@
+{
+  "b703cfbb-7613-42ef-8846-199734d20acd": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://tcicn.sharepoint.com/sites/kitadatest/law-listRefresh": {
+        "dataSources": {
+          "Products": {
+            "tableName": "565cf0e2-faec-45d6-9f5d-04eb0a653ee4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Products"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b703cfbb-7613-42ef-8846-199734d20acd"
+  }
+}

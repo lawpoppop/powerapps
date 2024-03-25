@@ -1,0 +1,25 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr9e2_product_forms",
+      "Namespace": "Products_1 (Forms)",
+      "Values": {
+        "Information": "78ae391a-8065-4002-b714-faa74bac4174"
+      }
+    },
+    {
+      "Kind": "default.cds_cr9e2_product_forms",
+      "Namespace": "Products (Forms)",
+      "Values": {
+        "Information": "78ae391a-8065-4002-b714-faa74bac4174"
+      }
+    },
+    {
+      "Kind": "default.cds_dataperformance_forms",
+      "Namespace": "Data Performance Collection (Forms)",
+      "Values": {
+        "Information": "84aae65e-faee-46b8-b72c-94b9d77d39c6"
+      }
+    }
+  ]
+}
