@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr9e2_product",
+    "MaxGetRowsCount": 500,
     "Name": "Products_1",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

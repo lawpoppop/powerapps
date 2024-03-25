@@ -117,13 +117,13 @@
     "Id": "cb6a3d5d-3840-4fb1-8d43-2375aa01035f",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "Product",
+    "Name": "Product-Branch1",
     "OriginatingVersion": "1.338",
     "ParserErrorCount": 2,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Product",
+    "AppName": "Product-Branch1",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
