@@ -116,7 +116,7 @@
         OnSelect: |
             =Patch(Products,DataTable2.Selected,{Country:txtCountry.Text});
             Patch(localProducts,DataTable2.Selected,{Country:txtCountry.Text});
-            //ClearCollect(localProducts,Products);
+            //ClearCollect(localProducts,Products);dsfdsfs
         PressedBorderColor: =RGBA(0, 69, 120, 1)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(16, 110, 190, 1)
