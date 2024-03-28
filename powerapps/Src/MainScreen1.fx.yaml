@@ -76,6 +76,34 @@
             Y: =0
             ZIndex: =3
 
+        Modified_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Modified"
+            FieldName: ="Modified"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Modified
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        Created_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Created"
+            FieldName: ="Created"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.Created
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
     txtCountry As text:
         BorderColor: =RGBA(245, 245, 245, 1)
         BorderThickness: =2
